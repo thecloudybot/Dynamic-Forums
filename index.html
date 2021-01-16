@@ -23,12 +23,13 @@ div.pos {
     top: 43px;
     left: 47px;
 }
-.mainview {
-    background-image: url();
-    background-size: cover;
-    height: 100vh;
-    padding:0;
-    margin:0;
+.hero-image {
+  background-image: url("photographer.jpg"); 
+  background-color: #cccccc; 
+  height: 100px;
+  background-position: center; 
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 </style>
 <div class="text pos" style="color:white; font-size:38px; font-family:Helvetica; font-weight:bold; -webkit-text-stroke: 1px #000000">Dynamic Forums</div>
@@ -39,6 +40,6 @@ div.pos {
 <script type="text/javascript">
 
   var images = ['https://4.bp.blogspot.com/-BCXep_B7YzY/T_ySLdac9bI/AAAAAAAABYA/tVlN87YEL58/s1600/tumblr_lha5ztoSqM1qa8vpro1_500.gif', 'https://cdn.ebaumsworld.com/mediaFiles/picture/2345140/84117957.gif', 'https://th.bing.com/th/id/OIP.4S-MDyu6lOP6MFtVrJesQwHaFj?pid=Api&rs=1', 'https://www.lovethispic.com/uploaded_images/20873-Trippy-Gif.gif?1'];
-  document.getElementsByClassName('mainview')[0].style.backgroundImage = 'url(`'images[Math.floor(Math.random() * images.length)]'`)';
+  document.getElementsByClassName('hero-image')[0].style.backgroundImage = 'url(`'images[Math.floor(Math.random() * images.length)]'`)';
 
 </script>
