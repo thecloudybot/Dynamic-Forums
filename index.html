@@ -43,22 +43,18 @@ body{
 </body>
 
 
-var target = document.getElementById('target');
-var titles = [
+<button id = "button" onclick="changeText(this)">Click on this text!</button>
+
+<script>
+function changeText(ele) {
+var random = [
     '“Be yourself; everyone else is already taken.” ― Oscar Wilde',
     '“Be the change that you wish to see in the world.” ― Mahatma Gandhi',
     '“We are all in the gutter, but some of us are looking at the stars.” ― Oscar Wilde',
     “I have not failed. I've just found 10,000 ways that won't work.” ― Thomas A. Edison',
     '“It is never too late to be what you might have been.”― George Eliot'
 ];
-
-function newTitle () {
-    var i = (Math.random() * titles.length) | 0;
-    target.innerText = titles[i];
-}
-
-newTitle();
-
-<button onclick="newTitle()">Make new title</button>
-<br />
-<span id="target"></span>
+   var id=Math.round(Math.random()*(random.length-1));
+   ele.innerHTML = random[id];
+}(document.getElementById("button"));
+</script>
