@@ -25,7 +25,7 @@ div.pos {
 }
 </style>
 <div class="text pos" style="color:white; font-size:38px; font-family:Helvetica; font-weight:bold; -webkit-text-stroke: 1px #000000">Dynamic Forums</div>
-<div class="text" style="color: white; font-size: 20px; font-family: Helvetica; font-weight: bold; position: absolute; top: 150px; left: 50px; -webkit-text-stroke: 1px #000000">🔨 This Site is under construction! 🔨</div>
+<div class="text" style="color: white; font-size: 20px; font-family: Helvetica; font-weight: bold; position: absolute; top: 150px; left: 50px; -webkit-text-stroke: 1px #000000">🔨 This Site is under construction 🔨</div>
 <div class="text" style="color: white; font-size: 20px; font-family: Helvetica; font-weight: bold; position: absolute; top: 120px; left: 50px; -webkit-text-stroke: 1px #000000;">Redirecting you to the main website</div>
 <meta http-equiv="Refresh" content="15; url='https://dynamicforums.wixsite.com/dynamic'" />
         <body>
@@ -47,13 +47,11 @@ body{
 
 <script>
 function changeText(ele) {
-var random = [
-    '“Be yourself; everyone else is already taken.” ― Oscar Wilde',
-    '“Be the change that you wish to see in the world.” ― Mahatma Gandhi',
-    '“We are all in the gutter, but some of us are looking at the stars.” ― Oscar Wilde',
-    “I have not failed. I've just found 10,000 ways that won't work.” ― Thomas A. Edison',
-    '“It is never too late to be what you might have been.”― George Eliot'
-];
+   var random=new Array(); 
+
+   random[0]='“Be the change that you wish to see in the world.” ― Mahatma Gandhi';
+   random[1]="“I have not failed. I've just found 10,000 ways that won't work.” ― Thomas A. Edison";
+   random[2]='“It is never too late to be what you might have been.”― George Eliot';
    var id=Math.round(Math.random()*(random.length-1));
    ele.innerHTML = random[id];
 }(document.getElementById("button"));
