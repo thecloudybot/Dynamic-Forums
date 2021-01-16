@@ -35,3 +35,11 @@ div.pos {
   $i = rand(0, count($bg)-1); // generate random number size of the array
   $selectedBg = "$bg[$i]"; // set variable equal to which random filename was chosen
 ?>
+
+<style type="text/css">
+<!--
+body{
+background: url(images/<?php echo $selectedBg; ?>) no-repeat;
+}
+-->
+</style>
