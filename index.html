@@ -41,6 +41,6 @@ body {
 
   let images = ['https://www.lovethispic.com/uploaded_images/20873-Trippy-Gif.gif?1'];
     let image = Math.floor(Math.random() * images.length);
-  document.getElementsByClassName('body')[0].style.backgroundImage = 'url(' + String([images[image]]) + ')';
+  document.getElementsByClassName('body')[0].style.backgroundImage = String([images[image]])
 
 </script>
