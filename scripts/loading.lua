@@ -20,6 +20,7 @@ Main.Active = true
 Main.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
 Main.Position = UDim2.new(0.566021144, 0, 0.505910158, 0)
 Main.Size = UDim2.new(0, 171, 0, 157)
+Main.BorderSizePixel = 0
 Main.CanvasSize = UDim2.new(0, 0, 0, 0)
 Loading.Name = "Loading"
 Loading.Parent = Main
